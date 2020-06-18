@@ -1,0 +1,45 @@
+@import "baserules";
+
+footer {
+  background-color: white;
+  position: relative;
+  top: -45px;
+  height: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  @media #{$desktop} {
+    top: 0px;
+  }
+  h2 {
+    width: 100%;
+    font-family: $Mono;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(6, 10, 36, 1);
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 24px 46px;
+    text-align: center;
+    @media #{$desktop} {
+      width: 70%;
+      text-align: start;
+      align-self: center;
+      padding-left: 6.9%;
+    }
+  }
+  div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    @media #{$desktop} {
+      align-self: center;
+      width: 25%;
+    }
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

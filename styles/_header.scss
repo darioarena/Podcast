@@ -1,0 +1,52 @@
+@import "menu";
+@import "baserules";
+
+header {
+  width: 100%;
+  min-height: 44px;
+  max-height: 268px;
+  font-family: $Mono;
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 16px;
+  @media #{$desktop} {
+    min-height: 80px;
+    max-height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 6.9%;
+  }
+  img {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    @media #{$desktop} {
+      position: initial;
+      width: 36px;
+    }
+  }
+  nav {
+    @media #{$desktop}{
+      align-self: center;
+    }
+    ul {
+      @media #{$desktop} {
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+      }
+      li{
+        @media #{$desktop}{
+          margin-left: 44px;
+        }
+        a{
+          @media #{$desktop}{
+            text-decoration: none;
+            min-height: 80px;
+          }
+        }
+      }
+    }
+  }
+}
